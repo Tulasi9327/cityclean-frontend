@@ -1,0 +1,79 @@
+/* Color Palette Variables */
+:root {
+  --primary-green: #1A6B47;
+  --primary-green-hover: #145236;
+  --accent-amber: #F59E0B;
+  --accent-amber-hover: #D97706;
+  --light-bg: #F9FBF9;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom Utilities for Project Theme */
+.text-green {
+  color: var(--primary-green) !important;
+}
+
+.bg-green {
+  background-color: var(--primary-green) !important;
+}
+
+.bg-green-gradient {
+  background: linear-gradient(135deg, #1A6B47 0%, #29855B 100%) !important;
+}
+
+.btn-green {
+  background-color: var(--primary-green) !important;
+  color: #ffffff !important;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-green:hover {
+  background-color: var(--primary-green-hover) !important;
+  color: #ffffff !important;
+}
+
+.btn-amber {
+  background-color: var(--accent-amber) !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-amber:hover {
+  background-color: var(--accent-amber-hover) !important;
+  color: #ffffff !important;
+}
+
+/* Leaflet Map Custom Styling */
+.map-outer-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+}
+
+.legend-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Card hover scaling effects */
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom CSS for smooth page section targets */
+section {
+  scroll-margin-top: 80px; /* Offset the sticky navigation bar */
+}
