@@ -27,8 +27,10 @@ function App() {
   };
 
   useEffect(() => {
-    fetchReports();
-  }, []);
+  axios.get(`${process.env.REACT_APP_API_URL}/api/reports`)
+    .then(res => setReports(res.data))
+    .catch(err => console.log('Error fetching reports from API:', err));
+}, []);
 
   return (
     <div>
