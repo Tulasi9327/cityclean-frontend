@@ -12,17 +12,17 @@ const Footer = () => {
           <div className="col-6 col-lg-2 ms-auto">
             <h6 className="fw-bold">Quick Links</h6>
             <ul className="list-unstyled text-muted small">
-              <li><a href="#" className="text-decoration-none text-muted">Waste Map</a></li>
-              <li><a href="#" className="text-decoration-none text-muted">Report Issue</a></li>
-              <li><a href="#" className="text-decoration-none text-muted">Recycle Guide</a></li>
+              <li><a href="/waste-map" className="text-decoration-none text-muted">Waste Map</a></li>
+              <li><a href="/report-issue" className="text-decoration-none text-muted">Report Issue</a></li>
+              <li><a href="/recycle-guide" className="text-decoration-none text-muted">Recycle Guide</a></li>            
             </ul>
           </div>
           <div className="col-6 col-lg-2">
             <h6 className="fw-bold">Resources</h6>
             <ul className="list-unstyled text-muted small">
-              <li><a href="#" className="text-decoration-none text-muted">Privacy Policy</a></li>
-              <li><a href="#" className="text-decoration-none text-muted">Terms of Use</a></li>
-              <li><a href="#" className="text-decoration-none text-muted">Admin Login</a></li>
+              <li><a href="/privacy-policy" className="text-decoration-none text-muted">Privacy Policy</a></li>
+              <li><a href="/terms" className="text-decoration-none text-muted">Terms of Use</a></li>
+              <li><a href="/admin-login" className="text-decoration-none text-muted">Admin Login</a></li>            
             </ul>
           </div>
           <div className="col-lg-3 text-lg-end">
